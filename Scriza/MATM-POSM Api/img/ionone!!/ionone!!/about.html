@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="css/style1.css" class="style">
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="img/ionone_pic.jpeg">
+            </div>
+        </nav>
+
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="https://source.unsplash.com/random/300x300/?laptop,mobile" class="mobile">
+            <div id="circle">
+                <div class="technologies one">
+                    <!-- <img src="img/Java_logo.png" alt="logo"> -->
+                    <div>
+                        <h2>Java,Android App,PHP</h2>
+                    </div>
+                </div>
+                <div class="technologies two">
+                    <!-- <img src="img/javascript.png" alt="logo"> -->
+                    <div>
+                        <h2>HTML,CSS,JavaScript,Node JS</h2>
+                    </div>
+                </div>
+                <div class="technologies three">
+                    <!-- <img src="img/PHP_logo.png" alt="logo"> -->
+                    <div>
+                        <h2>Web Development,WordPress</h2>
+                    </div>
+                </div>
+                <div class="technologies four">
+                    <!-- <img src="img/OIP.jfif" alt="logo"> -->
+                    <div>
+                        <h2>Apache,MySql</h2>
+                    </div>
+                </div>
+                
+        </div>
+
+            </div>
+        </div>
+
+        <div class="controls">
+            <img src="img/down-arrow.png" id="upBtn">
+            <h3>Technologies</h3>
+            <img src="img/down-arrow.png" id="downBtn">
+        </div>
+    </div>
+    <script>
+        var circle = document.getElementById("circle");
+        var upBtn = document.getElementById("upBtn");
+        var downBtn = document.getElementById("downBtn");
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        upBtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+        downBtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+        
+        
+    </script>
+</body>
+
+</html>
